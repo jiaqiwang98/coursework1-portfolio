@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiaqi WANG — iOS development, architecture design, and performance optimization. Experience at TikTok and Qwen. Taught postgraduate at the University of Nottingham Ningbo China.">
+  <meta name="theme-color" content="#0c1014">
+  <meta property="og:title" content="Jiaqi WANG / Engineering Portfolio">
+  <meta property="og:description" content="iOS · App Architecture · Web Infrastructure · Performance Optimization">
+  <meta property="og:type" content="website">
+  <title>Jiaqi WANG / Engineering Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="demos.css">
+  <script src="demos.js" defer></script>
+  <link rel="stylesheet" href="hobbies.css">
+  <script src="hobbies.js" defer></script>
+</head>
+<body class="geek-theme">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar" aria-label="Portfolio navigation">
+    <a class="brand" href="#home" aria-label="Jiaqi Wang, home"><span class="brand-icon" aria-hidden="true">&gt;_</span><span>jiaqi<span class="muted">.dev</span></span></a>
+    <div class="explorer-label">EXPLORER <span aria-hidden="true">···</span></div>
+    <div class="folder-label"><span aria-hidden="true">⌄</span> PORTFOLIO</div>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#home" aria-current="location"><span class="file-icon" aria-hidden="true">#</span>overview<span class="nav-index">00</span></a>
+      <a href="#profile"><span class="file-icon" aria-hidden="true">{ }</span>profile<span class="nav-index">01</span></a>
+      <a href="#expertise"><span class="file-icon" aria-hidden="true">&lt;/&gt;</span>expertise<span class="nav-index">02</span></a>
+      <a href="#experience"><span class="file-icon" aria-hidden="true">↳</span>experience<span class="nav-index">03</span></a>
+      <a href="#contact"><span class="file-icon" aria-hidden="true">@</span>contact<span class="nav-index">04</span></a>
+    </nav>
+    <div class="sidebar-projects"><span class="explorer-label">PROJECT SCREENS</span><a href="#qwen-showcase"><span class="small-square violet" aria-hidden="true"></span>qwen.platform</a><a href="#poi-showcase"><span class="small-square cyan" aria-hidden="true"></span>tiktok.local</a></div>
+    <div class="sidebar-bottom"><span class="mini-avatar" aria-hidden="true">JW</span><div>Jiaqi WANG<small>Engineering portfolio</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><a href="#home" class="breadcrumb"><span>jiaqi</span><span aria-hidden="true">/</span><strong>portfolio</strong></a><button id="command-trigger" class="command-trigger" type="button" hidden><span aria-hidden="true">⌕</span> Jump to… <kbd id="shortcut-label">⌘ K</kbd></button><span class="topbar-label">EN <span class="status-dot" aria-hidden="true"></span></span></header>
+    <main id="main">
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-kicker"><span class="branch-symbol" aria-hidden="true">⑂</span> PERSONAL PORTFOLIO <span class="hero-kicker-rule"></span> <span>01 / ENGINEERING</span></div>
+        <div class="hero-layout">
+          <div class="hero-copy"><p class="terminal-prompt"><span>~</span> / whoami</p><h1 id="hero-title">Jiaqi<br>WANG<span class="cursor" aria-hidden="true">_</span></h1><p class="role-line">iOS development.<br><span>Architecture. Performance.</span></p><p id="personal-introduction" hidden></p><div class="hero-tags"><span>ByteDance / TikTok</span><span>Alibaba / Qwen</span></div><a class="primary-link" href="#experience">Explore experience <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#expertise">View expertise <span aria-hidden="true">↓</span></a></div>
+          <div class="identity-file" aria-label="Profile at a glance"><div class="file-tab"><span class="file-tab-icon" aria-hidden="true">{ }</span> profile.json <span class="file-tab-dot" aria-hidden="true"></span></div><div class="code-body"><div class="code-line"><span class="line-number" aria-hidden="true">01</span><span>{</span></div><div class="code-line"><span class="line-number" aria-hidden="true">02</span><span>&nbsp; <span class="code-key">"name"</span>: <span class="code-string">"Jiaqi WANG"</span>,</span></div><div class="code-line"><span class="line-number" aria-hidden="true">03</span><span>&nbsp; <span class="code-key">"focus"</span>: [</span></div><div class="code-line"><span class="line-number" aria-hidden="true">04</span><span>&nbsp; &nbsp; <span class="code-string">"iOS Development"</span>,</span></div><div class="code-line"><span class="line-number" aria-hidden="true">05</span><span>&nbsp; &nbsp; <span class="code-string">"App Architecture"</span>,</span></div><div class="code-line"><span class="line-number" aria-hidden="true">06</span><span>&nbsp; &nbsp; <span class="code-string">"Performance"</span></span></div><div class="code-line"><span class="line-number" aria-hidden="true">07</span><span>&nbsp; ],</span></div><div class="code-line"><span class="line-number" aria-hidden="true">08</span><span>&nbsp; <span class="code-key">"education"</span>: {</span></div><div class="code-line"><span class="line-number" aria-hidden="true">09</span><span>&nbsp; &nbsp; <span class="code-key">"university"</span>: <span class="code-string">"UNNC"</span>,</span></div><div class="code-line"><span class="line-number" aria-hidden="true">10</span><span>&nbsp; &nbsp; <span class="code-key">"level"</span>: <span class="code-string">"Postgraduate"</span>,</span></div><div class="code-line"><span class="line-number" aria-hidden="true">11</span><span>&nbsp; &nbsp; <span class="code-key">"year"</span>: <span class="code-number">1</span></span></div><div class="code-line"><span class="line-number" aria-hidden="true">12</span><span>&nbsp; }</span></div><div class="code-line"><span class="line-number" aria-hidden="true">13</span><span>}</span></div></div><div class="file-footer"><span>PROFILE AT A GLANCE</span><span>JSON</span></div></div>
+        </div>
+        <div class="hero-footnote"><span><span class="footnote-marker" aria-hidden="true">↳</span> University of Nottingham Ningbo China</span><span>Electronic Information &amp; Computer Engineering</span></div>
+      </section>
+    <section class="section wrap profile-section" id="profile" aria-labelledby="profile-title">
+      <div class="section-index"><span>01 / PROFILE</span><span class="line"></span></div>
+      <div class="profile-layout"><div class="section-intro"><h2 id="profile-title">Academic profile<span class="heading-dot">.</span></h2><p class="section-note">Education & background</p></div>
+        <div class="profile-content"><div class="profile-title"><span class="label">CURRENT EDUCATION</span><span class="pill"><span class="status-dot" aria-hidden="true"></span> Year 1</span></div><h3>University of Nottingham<br>Ningbo China</h3><p class="degree">Electronic Information and Computer Engineering</p><dl class="education-facts"><div><dt>LEVEL</dt><dd>Taught postgraduate</dd></div><div><dt>STAGE</dt><dd>First year</dd></div><div><dt>LOCATION</dt><dd>Ningbo, China</dd></div></dl><a class="quiet-link" href="https://www.nottingham.edu.cn/en/">University website <span aria-hidden="true">↗</span></a><div class="interests hobby-section"><div class="hobby-heading"><h4>Outside of work</h4><span>OFF THE CLOCK</span></div><ul class="hobby-grid" aria-label="Personal interests"><li class="hobby-card" data-sport="football"><svg class="sport-scene" viewBox="0 0 180 124" aria-hidden="true">
+<rect class="sport-ground" x="8" y="22" width="164" height="88" rx="9"/><path class="sport-line" d="M17 101h146M17 32h146M90 32v69"/><circle class="sport-line" cx="90" cy="66" r="21"/>
+<path class="goal-grid" d="M135 40h31v44h-31zM143 40v44M151 40v44M159 40v44M135 51h31M135 62h31M135 73h31"/><path class="goal-post" d="M135 84V40h31v44"/>
+<g class="football-keeper"><circle cx="136" cy="59" r="5"/><path d="M136 65v11M127 66l9 3 9-3M136 76l-7 7M136 76l7 7"/></g>
+<path class="football-trail" d="M34 85Q79 39 151 61"/>
+<g class="football-flight"><g class="football-spin"><circle r="8" fill="#fcfcfd" stroke="#263546" stroke-width="1.1"/><path d="m0-4 4 3-2 5h-4l-2-5Z" fill="#263546"/><path d="m-7-3 3 2M7-3 4-1M0 8V4" stroke="#263546" stroke-width="1.3"/></g></g>
+<g class="football-celebration"><path d="m146 29-2-7M157 29l3-7M170 37l6-4M126 34l-5-4"/><text x="90" y="17" text-anchor="middle">GOAL!</text></g></svg><div class="hobby-card-footer"><span class="hobby-name">Football</span></div></li><li class="hobby-card" data-sport="badminton"><svg class="sport-scene" viewBox="0 0 180 124" aria-hidden="true">
+<rect class="sport-ground" x="8" y="22" width="164" height="88" rx="9"/><path class="sport-line" d="M19 95h142M30 36h120M90 36v59"/>
+<path class="sport-net" d="M90 54v47M85 54h10M87 59h6M87 64h6M87 69h6M87 74h6"/>
+<g class="badminton-left"><ellipse class="racket-head" cx="32" cy="72" rx="10" ry="14" transform="rotate(-25 32 72)"/><path class="racket-strings" d="m28 61 9 22M25 66l13 9M25 74l11-5"/><path class="racket-handle" d="m37 85 7 15"/></g>
+<g class="badminton-right"><ellipse class="racket-head" cx="149" cy="72" rx="10" ry="14" transform="rotate(25 149 72)"/><path class="racket-strings" d="m153 61-9 22M156 66l-13 9M156 74l-11-5"/><path class="racket-handle" d="m144 85-7 15"/></g>
+<path class="shuttle-trail" d="M39 62Q91-5 142 62"/>
+<g class="shuttle-flight"><g class="shuttle-rotation"><path d="m0 0-11-14 8-3 8 3Z" fill="var(--hobby-paper)" stroke="var(--hobby-accent)" stroke-width="1.2"/><path d="m0 0-7-15M0 0l1-16" stroke="var(--hobby-accent)" stroke-width=".8"/><circle r="3.6" fill="var(--hobby-accent)"/></g></g></svg><div class="hobby-card-footer"><span class="hobby-name">Badminton</span></div></li><li class="hobby-card" data-sport="table-tennis"><svg class="sport-scene" viewBox="0 0 180 124" aria-hidden="true">
+<rect class="sport-ground" x="8" y="22" width="164" height="88" rx="9"/>
+<path class="table-leg" d="M49 89v18M132 89v18"/><path class="table-top" d="M37 64h106l17 25H21Z"/><path class="table-stripe" d="M90 64v25M21 89h139"/><path class="sport-net" d="M90 49v42M85 52h10M86 58h8M86 64h8M86 70h8M86 76h8"/>
+<g class="ping-left"><path class="paddle-handle" d="m29 67-8 13"/><ellipse class="paddle-face" cx="34" cy="58" rx="10" ry="13" transform="rotate(30 34 58)"/></g>
+<g class="ping-right"><path class="paddle-handle" d="m151 67 8 13"/><ellipse class="paddle-face" cx="146" cy="58" rx="10" ry="13" transform="rotate(-30 146 58)"/></g>
+<path class="ping-trail" d="M39 55Q61 21 90 49T141 55"/>
+<circle class="ping-ball" cx="0" cy="0" r="4.3" fill="#f6a956" stroke="#9c5b22" stroke-width=".7"/>
+</svg><div class="hobby-card-footer"><span class="hobby-name">Table Tennis</span></div></li></ul></div></div>
+      </div>
+    </section>
+    <section class="expertise-section" id="expertise" aria-labelledby="expertise-title"><div class="section wrap">
+      <div class="section-index"><span>02 / EXPERTISE</span><span class="line"></span></div>
+      <div class="section-heading"><h2 id="expertise-title">Engineering expertise<span class="heading-dot">.</span></h2><p class="section-note">Expertise grounded in industry experience</p></div>
+      <div id="skills" class="skills populated">
+        <article class="skill">
+          <span class="skill-number">01</span>
+          <svg class="skill-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="5" y="4" width="18" height="32" rx="4"/><path d="M11 8h6M11 31h6M23 16h7M23 25h7"/><circle cx="33" cy="16" r="3"/><circle cx="33" cy="25" r="3"/></svg>
+          <h3>Large-Scale App Development &amp; Collaboration</h3>
+          <p>Previously worked on TikTok at ByteDance and Qwen at Alibaba, with experience in business feature development and team collaboration for large-scale iOS apps.</p>
+          <ul class="expertise-details">
+            <li><strong>TikTok · ByteDance</strong><span>Developed business features for TikTok Local Services, focusing on POI detail pages.</span></li>
+            <li><strong>Qwen · Alibaba</strong><span>Worked in the iOS Architecture Team on app Web infrastructure and the in-app Open Platform.</span></li>
+          </ul>
+          <a class="skill-evidence skill-project-link" href="#poi-showcase">Explore POI screens <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="skill">
+          <span class="skill-number">02</span>
+          <svg class="skill-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="13" y="3" width="14" height="9" rx="2"/><rect x="3" y="28" width="14" height="9" rx="2"/><rect x="23" y="28" width="14" height="9" rx="2"/><path d="M20 12v8M10 28v-8h20v8M17 7.5h6M7 32.5h6M27 32.5h6"/></svg>
+          <h3>Architecture Design &amp; Performance Optimization</h3>
+          <p>Experience in app architecture design and performance optimization, with contributions to the following frameworks and infrastructure.</p>
+          <ul class="expertise-details">
+            <li><strong>TikTok POI Dynamic Page Framework</strong><span>Developed Slash, a data-driven framework for TikTok POI detail pages, enabling component additions, removals, and reordering without an app release.</span></li>
+            <li><strong>Qwen Open Platform Web Container</strong><span>Designed a standardized iOS Web container and SDK for Qwen’s third-party platforms, with whitelist and blacklist access control.</span></li>
+            <li><strong>Qwen Internationalization Framework</strong><span>Designed Qwen’s internationalization framework to support multiple languages.</span></li>
+          </ul>
+          <a class="skill-evidence skill-project-link" href="#qwen-demo">Explore the container demo <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </div></section>
+    <section class="section wrap experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-index"><span>03 / EXPERIENCE</span><span class="line"></span></div><div class="section-heading"><h2 id="experience-title">Experience log<span class="heading-dot">.</span></h2><p class="section-note">Industry experience / 2021–2026</p></div>
+      <div id="projects" class="career-list">
+        <article class="career">
+          <div class="career-date"><span class="career-dot" aria-hidden="true"></span><time datetime="2025-09">SEP 2025</time><span class="date-dash">—</span><time datetime="2026-09">SEP 2026</time><span class="career-type">iOS Architecture</span></div>
+          <div class="career-content">
+            <div class="career-heading"><h3>Alibaba</h3><span class="company-mark alibaba" aria-hidden="true">A</span></div>
+            <p class="career-team">Qwen · iOS Architecture Team</p>
+            <p class="career-description">Responsible for Web infrastructure development for the Qwen iOS app, including development and performance optimization of its in-app Open Platform.</p>
+            <div class="contribution"><span class="label">KEY CONTRIBUTION</span><h4>Qwen Open Platform &amp; Web Infrastructure</h4><p>Developed and optimized the in-app Open Platform. Designed a standardized Web container and SDK for third-party integrations, including China Eastern Airlines, KFC, and Luckin Coffee, with whitelist and blacklist access control.</p></div>
+            <div class="tags" aria-label="Areas of work"><span class="tag">iOS</span><span class="tag">Open Platform</span><span class="tag">Web Infrastructure</span><span class="tag">Performance Optimization</span></div>
+          </div>
+
+          <section class="product-showcase qwen-showcase" id="qwen-showcase" aria-labelledby="qwen-showcase-title">
+            <div class="showcase-heading"><div><span class="label">PRODUCT SCREENS / QWEN</span><h4 id="qwen-showcase-title">qwen / in-app services</h4><p>In-app service experiences within Qwen.</p></div><span class="showcase-hint">Select a screen to view full size <span aria-hidden="true">↗</span></span></div>
+            <div class="screen-gallery screen-gallery-two">
+            <figure class="product-screen">
+              <a class="screen-link" href="%E5%8D%83%E9%97%AE/IMG_7121.PNG" target="_blank" rel="noopener" aria-label="Open full-size screenshot: In-app food ordering (opens in a new tab)">
+                <img src="%E5%8D%83%E9%97%AE/IMG_7121.PNG" width="1320" height="2868" loading="lazy" decoding="async" alt="Qwen iOS app showing a KFC menu and food ordering interface in an in-app panel.">
+                <span class="screen-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="screen-number">01</span><div><h5>In-app food ordering</h5><p>Restaurant menu and ordering interface.</p></div></figcaption>
+            </figure>
+            <figure class="product-screen">
+              <a class="screen-link" href="%E5%8D%83%E9%97%AE/IMG_7122.PNG" target="_blank" rel="noopener" aria-label="Open full-size screenshot: In-app flight booking (opens in a new tab)">
+                <img src="%E5%8D%83%E9%97%AE/IMG_7122.PNG" width="1320" height="2868" loading="lazy" decoding="async" alt="Qwen iOS app showing a flight from Ningbo to Guangzhou with multiple fare and booking options.">
+                <span class="screen-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="screen-number">02</span><div><h5>In-app flight booking</h5><p>Flight information and fare options.</p></div></figcaption>
+            </figure>
+            </div>
+          </section>
+          <section class="tech-demo qwen-demo" id="qwen-demo" data-demo="qwen" aria-labelledby="qwen-demo-title">
+            <header class="td-heading"><div><span class="td-eyebrow">INTERACTIVE ENGINEERING / QWEN</span><h4 id="qwen-demo-title">A shared SDK. A controlled entry.</h4><p>A standardized iOS Web container for third-party platforms, with a common SDK and whitelist / blacklist access control.</p></div><span class="td-badge">SDK + ACCESS</span></header>
+            <div class="qwen-settings" data-controls hidden><fieldset class="td-partners"><legend>01 / SELECT A PLATFORM</legend><div class="td-partner-buttons"><button type="button" data-partner="eastern" aria-pressed="false"><span class="td-partner-mark">CE</span>China Eastern</button><button type="button" data-partner="kfc" aria-pressed="true"><span class="td-partner-mark">KFC</span>KFC</button><button type="button" data-partner="luckin" aria-pressed="false"><span class="td-partner-mark">LK</span>Luckin Coffee</button></div></fieldset><fieldset class="td-policy"><legend>02 / SET DEMO ACCESS</legend><label><input type="checkbox" data-policy="allow" checked> On whitelist</label><label><input type="checkbox" data-policy="deny"> On blacklist</label><span>For the selected platform only.</span></fieldset></div>
+            <div class="td-controls" data-controls hidden><button type="button" class="td-button td-primary" data-action="run">▶ Run request</button><button type="button" class="td-button" data-action="reset">Reset</button><span class="td-control-hint">Try a scenario:</span><button type="button" class="td-scenario" data-scenario="allowed">Whitelisted</button><button type="button" class="td-scenario" data-scenario="blocked">Blacklisted</button><button type="button" class="td-scenario" data-scenario="unlisted">Unlisted</button></div>
+            <ol class="qwen-pipeline" aria-label="Conceptual request flow"><li data-stage="partner"><span class="td-node-index">01</span><span class="td-node-symbol" aria-hidden="true">↗</span><strong data-partner-name>KFC</strong><small>Third-party platform</small></li><li data-stage="sdk"><span class="td-node-index">02</span><span class="td-node-symbol" aria-hidden="true">{ }</span><strong>Standard SDK</strong><small>Shared integration contract</small></li><li data-stage="policy"><span class="td-node-index">03</span><span class="td-node-symbol" aria-hidden="true">◇</span><strong>Access control</strong><small>Whitelist + blacklist</small></li><li data-stage="container"><span class="td-node-index">04</span><span class="td-node-symbol" aria-hidden="true">▣</span><strong>iOS Web container</strong><small>Authorized service content</small></li></ol>
+            <div class="qwen-output"><div class="td-event-log"><span class="td-eyebrow">REQUEST TRACE</span><ol data-trace><li>Ready to demonstrate a third-party request.</li></ol></div><div class="td-web-window"><div class="td-panel-bar"><span>Qwen / Web container</span><span class="td-result-tag" data-result-tag>READY</span></div><div data-service class="td-service"><span class="td-service-symbol" aria-hidden="true">◇</span><strong>Waiting for a request</strong><p>Only an authorized platform reaches this view.</p></div></div></div>
+            <p class="td-status" data-status role="status" aria-live="polite">Choose a platform and run a request to follow its path.</p><p class="td-disclaimer">Conceptual flow, not production internals. Demo rule: blacklist takes precedence; platforms absent from the whitelist are denied. All permissions are simulated and do not describe live partner access.</p><noscript><p class="td-disclaimer">Enable JavaScript to run the request animation.</p></noscript>
+          </section>
+        </article>
+        <article class="career">
+          <div class="career-date"><span class="career-dot" aria-hidden="true"></span><time datetime="2021-07">JUL 2021</time><span class="date-dash">—</span><time datetime="2025-09">SEP 2025</time><span class="career-type">iOS Development</span></div>
+          <div class="career-content">
+            <div class="career-heading"><h3>ByteDance</h3><span class="company-mark bytedance" aria-hidden="true">B</span></div>
+            <p class="career-team">TikTok · Local Services</p>
+            <p class="career-description">Worked as an iOS developer on TikTok Local Services, primarily developing POI detail pages, with responsibility for multiple business feature cards and page performance optimization.</p>
+            <div class="contribution"><span class="label">KEY CONTRIBUTION</span><h4>Slash Framework, Business Cards &amp; Performance</h4><p>Developed multiple business feature cards and optimized POI page performance. Built Slash to drive page composition through a dynamic data protocol, supporting component additions, removals, and reordering without an app release.</p></div>
+            <div class="tags" aria-label="Areas of work"><span class="tag">iOS</span><span class="tag">POI Detail Pages</span><span class="tag">Business Feature Cards</span><span class="tag">Performance Optimization</span></div>
+          </div>
+
+          <section class="product-showcase poi-showcase" id="poi-showcase" aria-labelledby="poi-showcase-title">
+            <div class="showcase-heading"><div><span class="label">PRODUCT SCREENS / TIKTOK LOCAL SERVICES</span><h4 id="poi-showcase-title">tiktok / local discovery</h4><p>POI detail pages and local discovery experiences.</p></div><span class="showcase-hint">Select a screen to view full size <span aria-hidden="true">↗</span></span></div>
+            <div class="screen-gallery screen-gallery-three">
+            <figure class="product-screen">
+              <a class="screen-link" href="POI%E8%AF%A6%E6%83%85%E9%A1%B5/POI%E8%AF%A6%E6%83%85%E9%A1%B51.PNG" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Hotel overview &amp; rooms (opens in a new tab)">
+                <img src="POI%E8%AF%A6%E6%83%85%E9%A1%B5/POI%E8%AF%A6%E6%83%85%E9%A1%B51.PNG" width="1320" height="2868" loading="lazy" decoding="async" alt="TikTok hotel POI detail page with photos, ratings, booking providers, and room information.">
+                <span class="screen-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="screen-number">01</span><div><h5>Hotel overview & rooms</h5><p>Place details, booking providers, and room cards.</p></div></figcaption>
+            </figure>
+            <figure class="product-screen">
+              <a class="screen-link" href="POI%E8%AF%A6%E6%83%85%E9%A1%B5/POI%E8%AF%A6%E6%83%85%E9%A1%B52.PNG" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Highlights &amp; amenities (opens in a new tab)">
+                <img src="POI%E8%AF%A6%E6%83%85%E9%A1%B5/POI%E8%AF%A6%E6%83%85%E9%A1%B52.PNG" width="1320" height="2868" loading="lazy" decoding="async" alt="TikTok hotel detail page showing highlights, amenity cards, and visitor posts.">
+                <span class="screen-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="screen-number">02</span><div><h5>Highlights & amenities</h5><p>Highlights, facilities, and community content.</p></div></figcaption>
+            </figure>
+            <figure class="product-screen">
+              <a class="screen-link" href="POI%E8%AF%A6%E6%83%85%E9%A1%B5/POI%E8%AF%A6%E6%83%85%E9%A1%B53.PNG" target="_blank" rel="noopener" aria-label="Open full-size screenshot: City discovery (opens in a new tab)">
+                <img src="POI%E8%AF%A6%E6%83%85%E9%A1%B5/POI%E8%AF%A6%E6%83%85%E9%A1%B53.PNG" width="1320" height="2868" loading="lazy" decoding="async" alt="TikTok New York city page showing a map, place categories, and restaurant recommendation cards.">
+                <span class="screen-expand" aria-hidden="true">↗</span>
+              </a>
+              <figcaption><span class="screen-number">03</span><div><h5>City discovery</h5><p>Map-based discovery and local recommendations.</p></div></figcaption>
+            </figure>
+            </div>
+          </section>
+          <section class="tech-demo slash-demo" id="slash-demo" data-demo="slash" aria-labelledby="slash-title">
+            <header class="td-heading"><div><span class="td-eyebrow">INTERACTIVE ENGINEERING / SLASH</span><h4 id="slash-title">One protocol. A different page.</h4><p>A data-driven framework for TikTok POI detail pages. Add, remove, and reorder supported components without an app release.</p></div><span class="td-badge">DATA → UI</span></header>
+            <div class="td-controls" data-controls hidden><button type="button" class="td-button td-primary" data-action="play" aria-pressed="false">▶ Play walkthrough</button><button type="button" class="td-button" data-action="reset">Reset</button><span class="td-control-hint">Or edit the component list below.</span></div>
+            <div class="slash-workspace">
+              <div class="td-protocol"><div class="td-panel-bar"><span><i class="td-dot" aria-hidden="true"></i> layout.json</span><span data-revision>revision 01</span></div><div class="td-code-intro"><span>{</span><br>&nbsp; <span class="td-code-key">"page"</span>: <span class="td-code-value">"poi"</span>,<br>&nbsp; <span class="td-code-key">"components"</span>: [</div><ol class="td-component-list" data-components aria-label="Page component order"><li>overview</li><li>rooms</li><li>reviews</li></ol><div class="td-code-outro">&nbsp; ]<br>}</div><div class="td-add-row" data-controls hidden><label for="slash-component">Add component<select id="slash-component" data-add-select><option value="highlights">Highlights</option><option value="offers">Offers</option></select></label><button type="button" class="td-button" data-action="add">+ Add</button></div><p class="td-panel-note">Change order with ↑ ↓. Remove a component with ×.</p></div>
+              <div class="td-client"><div class="td-render-path" aria-label="Data rendering flow"><span data-flow="protocol">Protocol</span><i aria-hidden="true">→</i><span data-flow="engine">Slash</span><i aria-hidden="true">→</i><span data-flow="ui">UI</span></div><div class="td-phone"><div class="td-phone-top"><span>POI / PREVIEW</span><span class="td-build">Same app build</span></div><div class="td-phone-cards" data-phone><div class="td-static-preview">Sample POI<br>Overview · Rooms · Reviews</div></div><div class="td-phone-bottom" aria-hidden="true"><span></span></div></div></div>
+            </div>
+            <div class="td-demo-footer"><div class="td-steps" aria-label="Walkthrough steps"><span data-step="0" class="is-active">01 Initial</span><span data-step="1">02 Add</span><span data-step="2">03 Reorder</span><span data-step="3">04 Remove</span></div><p class="td-status" data-status role="status" aria-live="polite">The component sequence defines the page layout.</p></div><p class="td-disclaimer">Conceptual animation. The protocol and sample UI are illustrative; the production schema is not shown. Components shown here are already supported by the client.</p><noscript><p class="td-disclaimer">Enable JavaScript to edit the protocol and play the animation.</p></noscript>
+          </section>
+        </article>
+      </div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div class="contact-top"><span class="label">04 / CONTACT</span><a href="#home" aria-label="Back to top" class="back-top">↑</a></div><div class="contact-main"><h2 id="contact-title">Contact<span class="heading-dot">.</span></h2><div id="contact-links" class="contact-links"><p>Contact information will be added here.</p></div></div><div class="contact-bottom"><span>Jiaqi WANG</span><span>Electronic Information & Computer Engineering</span></div></div></section>
+    </main>
+    <footer class="footer wrap"><span>© <span data-year>2026</span> Jiaqi WANG</span><span class="footer-note">PERSONAL / ENGINEERING / PORTFOLIO</span><a href="#home">Back to top ↑</a></footer>
+  </div>
+  <dialog id="command-palette" aria-labelledby="command-title">
+    <div class="palette-header"><h2 id="command-title">Jump to a section</h2><button type="button" id="command-close" aria-label="Close navigation">Esc</button></div>
+    <label class="sr-only" for="command-search">Search sections</label><input id="command-search" type="search" placeholder="Search profile, projects, expertise…" autocomplete="off" spellcheck="false">
+    <nav class="command-results" aria-label="Quick navigation"><a href="#home">Overview <span>00</span></a><a href="#profile">Academic profile <span>01</span></a><a href="#expertise">Engineering expertise <span>02</span></a><a href="#experience">Experience log <span>03</span></a><a href="#qwen-demo">Qwen / SDK &amp; access demo <span>↗</span></a><a href="#slash-demo">Slash / dynamic page demo <span>↗</span></a><a href="#qwen-showcase">Qwen / product screens <span>↗</span></a><a href="#poi-showcase">TikTok / POI screens <span>↗</span></a><a href="#contact">Contact <span>04</span></a></nav><p id="command-empty" role="status" hidden>No matching sections.</p><div class="palette-footer">↑ ↓ to navigate <span>Enter to open · Esc to close</span></div>
+  </dialog>
+</body>
+</html>
